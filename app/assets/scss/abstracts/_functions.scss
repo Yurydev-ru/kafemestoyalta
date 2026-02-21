@@ -1,0 +1,12 @@
+@function rem($px) {
+  @return math.div($px, 16) * 1rem;
+}
+
+@function fluid-clamp($min, $max, $vw-min: 320px, $vw-max: 1440px) {
+  $slope: math.div(($max - $min), ($vw-max - $vw-min));
+  $base: $min - $slope * $vw-min;
+
+  $preferred: calc(#{$base / 16}rem + #{$slope * 100}vw);
+
+  @return clamp(#{$min / 16}rem, $preferred, #{$max / 16}rem);
+}

@@ -1,13 +1,16 @@
-<template>
-  <div>
-    <slot />
-  </div>
-</template>
-
 <script lang="ts" setup>
 
 </script>
 
-<style>
+<template>
+  <div class="app">
+    <main>
+      <slot />
+    </main>
+  </div>
 
+</template>
+
+<style lang="scss" scoped>
+  
 </style>

@@ -1,13 +1,13 @@
-<template>
-  <div>
-    
-  </div>
-</template>
-
 <script lang="ts" setup>
-
+definePageMeta({
+    layout: 'default'
+})
 </script>
 
-<style>
+<template>
+  <p>sgs</p>
+</template>
 
+<style lang="scss" scoped>
+  
 </style>
