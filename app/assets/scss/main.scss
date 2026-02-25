@@ -2,5 +2,7 @@
 @use 'abstracts';
 @use 'tokens';
 @use 'base';
+@use 'layout';
 
-@layer reset, tokens, base;
+
+@layer reset, tokens, base, layout;

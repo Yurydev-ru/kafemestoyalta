@@ -1,13 +1,11 @@
 <script lang="ts" setup>
-definePageMeta({
-    layout: 'default'
-})
+
 </script>
 
 <template>
-  <AppContainer>
-d
-  </AppContainer>
+    <div class="container">
+        <slot/>
+    </div>
 </template>
 
 <style lang="scss" scoped>
