@@ -5,11 +5,12 @@
     display: grid;
     place-content: center;
     gap: 6px;
-    background: transparent;
+    background: var(--color-bg-ui);
     border: 2px solid var(--color-border-primary);
     cursor: pointer;
     padding: 0;
     border-radius: 12px;
+    z-index: 1000;
 
     &__line {
       width: 20px;
@@ -38,5 +39,12 @@
         background: var(--color-bg-secondary-hover);
       }
     }
-}
+    &:focus {
+        outline: none;
+        background-color: var(--color-bg-ui-hover);
+      .burger__line {
+        background: var(--color-bg-secondary-hover);
+      }
+    }    
+  }
 }

@@ -21,7 +21,7 @@ onMounted (() => {
 </script>
 
 <template>
-    <button class="burger" :class="{ 'is-open': modelValue }" type="button" :aria-expanded="modelValue" :aria-controls="controls" aria-label="Toggle menu" @click="toggle"
+    <button class="burger" :class="{ 'is-open': modelValue }" type="button" :aria-expanded="modelValue" :aria-controls="controls" aria-label="Открыть/закрыть меню" @click="toggle"
     >
         <span class="burger__line"></span>
         <span class="burger__line"></span>

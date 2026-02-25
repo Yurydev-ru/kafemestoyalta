@@ -5,16 +5,10 @@
 </script>
 
 <template>
-    <div class="modal-overlay" @click="$emit('close')">
-        <<div class="modal_content">
-            <ul>
-                <li>34</li>
-                <li>34</li>
-                <li>34</li>
-                <li>34</li>
-                <li>34</li>
-            </ul>
-        </div>>
+    <div class="modal-overlay" @click="$emit('close')" aria-label="Закрыть меню">
+        <div class="modal-content" @click.stop>
+            <AppNav @close="$emit('close')" />
+        </div>
     </div>
 </template>
 
