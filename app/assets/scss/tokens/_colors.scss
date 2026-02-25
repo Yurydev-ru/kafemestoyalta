@@ -1,8 +1,11 @@
 @layer tokens {
     :root {
-        --color-bg-primary: #0A0B0A;
-    --color-text-primary: #EFE7D2;
-    --color-border-primary: #333330;
-    --color-border-hover: #4E4C47;
+    --color-bg-primary: rgba(10,11,10);
+    --color-bg-ui: rgba(24, 24, 24, 0.499);
+    --color-bg-ui-hover: rgba(30, 10, 30);
+    --color-bg-secondary: rgb(239, 231, 210);
+    --color-bg-secondary-hover: #CFBE91;
+    --color-border-primary: rgba(51,51,48);
+    --color-border-hover: rgba(78,76,71,);
     }
 }

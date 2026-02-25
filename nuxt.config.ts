@@ -3,8 +3,8 @@ export default defineNuxtConfig({
   css: ['~/assets/scss/main.scss'],
   components: [
     {
-      path: '~/components/layout',
-      prefix: 'App'
+      path: '~/components/',
+      pathPrefix: false
     },
   ],
   devServer: {
