@@ -7,11 +7,8 @@ import AppHeader from '~/components/layout/Header.vue';
 <template>
   <div class="app-wrapper">
     <AppHeader />
-    <main>
-      
-
+    <main class="app-main">
       <slot />
-      
     </main>
   </div>
 

@@ -1,8 +1,14 @@
 @layer layout {
     .app-wrapper {
+        min-height: 100dvh;
         display: flex;
         flex-direction: column;
-        min-block-size: 100vh;
         position: relative;
+        overflow-x: hidden;
+        padding: var(--space-sm);
+        border-radius: 16px;
+        @media (min-width: 768px) {
+            padding: var(--space-md);
+        }
     }
 }

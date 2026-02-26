@@ -12,6 +12,15 @@
         align-items: center;
         z-index: 999;
     }
+
+    @media (min-width: 768px) {
+        .app-nav {
+            position: static;
+            height: auto;
+            background-color: transparent;
+            backdrop-filter: none;
+        }
+    }
     .app-nav__list {
         display: flex;
         flex-direction: column;

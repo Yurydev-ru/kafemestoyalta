@@ -1,25 +1,27 @@
 @layer reset {
-    *,
-*::before,
-*::after {
+*,
+  *::before,
+  *::after {
     box-sizing: border-box;
-}
+  }
 
 * {
     margin: 0;
-    
-}
+    padding: 0;
+  }
 
 html {
     block-size: 100%;
     scroll-behavior: smooth;
-    overflow-x: hidden;
-}
+    overflow-x: hidden;           
+  }
 
 body {
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
+    min-block-size: 100dvh;       
+    line-height: 1.5;             
+    text-rendering: optimizeLegibility;  
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 img, picture, video {

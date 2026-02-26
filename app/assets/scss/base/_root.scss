@@ -1,4 +1,7 @@
     @layer base {
+        html {
+            min-height: 100%;
+        }
         body {
             background-color: var(--color-bg-primary);
             color: var(--color-text-primary);
