@@ -1,5 +1,15 @@
 .app-footer {
+
+    width: 90%;
+    margin-inline: auto;
     background-color: var(--bg-primary);
-    height: 50px;
-    width: 100%;
+
+    border-radius: 16px;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+     width: 300px;
+     margin-inline-end: inherit;
+     height: auto;
+  }
 }

@@ -43,7 +43,11 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: ` @use "@/assets/scss/tokens/colors";`
+          additionalData: ` 
+          @use "@/assets/scss/tokens/breakpoints";
+          @use "@/assets/scss/abstracts/mixins";
+          @use "@/assets/scss/tokens/colors";
+          `
         }
       }
     }
