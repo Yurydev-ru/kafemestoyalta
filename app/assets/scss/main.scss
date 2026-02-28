@@ -4,6 +4,7 @@
 @use "layout/wrapper";
 @use "layout/main";
 
-
+@use "layout/container" as *;
 @use "components/header";
 @use "components/footer";
+@use "components/navlink";

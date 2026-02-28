@@ -1,5 +1,14 @@
 .app-header {
-    width: 90%;
-    background-color: var(--bg-muted);
-    margin-inline: auto;
+  display: flex;
+  position: fixed;
+  top: 16px;
+  left: 0;
+  margin-inline: auto;
+  //   padding: 0 12px;
+  width: 100%;
+  //   z-index: 1000;
+
+  border-radius: 8px;
+
+  height: 60px;
 }

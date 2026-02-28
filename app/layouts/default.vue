@@ -1,18 +1,19 @@
 <script lang="ts" setup>
-
+import Container from "@/components/layout/Container.vue";
+import AppFooter from "~/components/layout/AppFooter.vue";
+import AppHeader from "~/components/layout/AppHeader.vue";
 </script>
 
 <template>
   <div class="app-wrapper">
     <AppHeader />
     <main class="app-main">
-      <slot />
+      <Container>
+        <slot />
+      </Container>
     </main>
-    <AppFooter/>
+    <AppFooter />
   </div>
-
 </template>
 
-<style lang="scss" scoped>
-  
-</style>
+<style lang="scss" scoped></style>

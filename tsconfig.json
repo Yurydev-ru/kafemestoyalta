@@ -9,11 +9,11 @@
       "@/*": ["./app/*"],
       "~/*": ["./app/*"],
       "@types": ["./shared/types/index.ts"],
-      "@types/*": ["./shared/types/*"],
+      "@types/*": ["./shared/types/*"]
     },
     "types": ["@types/node"]
   },
-"references": [
+  "references": [
     {
       "path": "./.nuxt/tsconfig.app.json"
     },

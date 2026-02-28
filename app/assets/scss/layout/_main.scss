@@ -1,6 +1,11 @@
+.app-main {
+  flex: 1;
+  width: 100%;
+  //   overflow-y: auto;
+  //   overflow: hidden;
+  overflow-x: hidden;
+  padding: 0 12px;
 
-  .app-main {
-    flex: 1;
-    overflow-y: auto;
-  }
-
+  border-radius: 16px;
+  background-color: var(--bg-primary);
+}

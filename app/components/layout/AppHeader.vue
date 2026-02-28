@@ -1,15 +1,9 @@
-<script lang="ts" setup>
-
-
-
-</script>
+<script lang="ts" setup></script>
 
 <template>
-    <header class="app-header">
-        
-    </header>
+  <header class="app-header">
+    <div class="container">sfs</div>
+  </header>
 </template>
 
-<style lang="scss" scoped>
-    
-</style>
+<style lang="scss" scoped></style>

@@ -46,6 +46,7 @@ export default defineNuxtConfig({
           additionalData: ` 
           
           @use "@/assets/scss/tokens/colors";
+          @use "@/assets/scss/abstracts/_mixins.scss" as *;
           `,
         },
       },
