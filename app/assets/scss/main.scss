@@ -1,8 +1,10 @@
+@use "tokens";
+@use "base/global";
+@use "base/reset";
+@use "layout/wrapper";
+@use "layout/main";
 
-@use 'abstracts';
-@use 'tokens';
-@use 'base';
-@use 'layout';
-
-
-@layer reset, tokens, base, layout;
+@use "layout/container" as *;
+@use "components/header";
+@use "components/footer";
+@use "components/navlink";

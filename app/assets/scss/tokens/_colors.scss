@@ -1,8 +1,13 @@
-@layer tokens {
-    :root {
-        --color-bg-primary: #0A0B0A;
-    --color-text-primary: #EFE7D2;
-    --color-border-primary: #333330;
-    --color-border-hover: #4E4C47;
+:root {
+    --bg-primary: rgb(10, 11, 10);
+    --bg-muted: rgba(24, 24, 24, 0.5);
+    --bg-muted-hover: rgb(30, 30, 30);
+    --color-border-primary: rgb(51, 51, 48);
+    --color-border-muted: rgb(246, 246, 246);
+    --color-border-hover: rgb(78, 76, 71);
+    --color-primary: rgb(239, 231, 210);
+    --color-primary-hover: rgb(207, 190, 145);
+    --color-text-primary: rgb(239, 231, 210);
+    --color-text-muted: rgb(245, 242, 234, 0.7);
+
     }
-}

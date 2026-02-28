@@ -1,8 +1,15 @@
-@layer layout {
-    .app-wrapper {
-        display: flex;
-        flex-direction: column;
-        min-block-size: 100vh;
-        position: relative;
-    }
+.app-wrapper {
+  height: 100dvh;
+  padding: 12px;
+  overflow: hidden;
+  background-color: var(--bg-muted);
+
+  &_container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--bg-primary);
+    border-radius: 12px;
+  }
 }

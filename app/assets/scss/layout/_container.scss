@@ -1,7 +1,6 @@
-@layer layout {
-    .container {
-        width: 100%;
-        margin-inline: auto;
-        padding-inline: var(--space-sm);
-    }
+.container {
+  display: flex;
+  overflow: hidden;
+  background-color: var(--bg-muted);
+  backdrop-filter: blur(10px);
 }
