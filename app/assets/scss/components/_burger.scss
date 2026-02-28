@@ -1,11 +1,11 @@
-@layer components {
+
   .burger {
     width: 41px;
     height: 41px;
     display: grid;
     place-content: center;
     gap: 6px;
-    background: var(--color-bg-ui);
+    background: var(--bg-muted);
     border: 2px solid var(--color-border-primary);
     cursor: pointer;
     padding: 0;
@@ -15,7 +15,7 @@
     &__line {
       width: 20px;
       height: 1px;
-      background: var(--color-bg-secondary);
+      background: var(--color-primary);
       transition: transform 0.3s ease,
                   opacity 0.2s ease;
     }
@@ -33,18 +33,17 @@
         transform: translateY(-8px) rotate(-45deg);
       }
     }
-    &:hover {
-        background-color: var(--color-bg-ui-hover);
-      .burger__line {
-        background: var(--color-bg-secondary-hover);
-      }
-    }
-    &:focus {
-        outline: none;
-        background-color: var(--color-bg-ui-hover);
-      .burger__line {
-        background: var(--color-bg-secondary-hover);
-      }
-    }    
+    // &:hover {
+    //     background-color: var(--color-bg-ui-hover);
+    //   .burger__line {
+    //     background: var(--color-bg-secondary-hover);
+    //   }
+    // }
+    // &:focus {
+    //     outline: none;
+    //     background-color: var(--color-bg-ui-hover);
+    //   .burger__line {
+    //     background: var(--color-bg-secondary-hover);
+    //   }
+    // }    
   }
-}

@@ -1,14 +1,15 @@
-@layer layout {
-    .app-wrapper {
-        min-height: 100dvh;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        overflow-x: hidden;
-        padding: var(--space-sm);
-        border-radius: 16px;
-        @media (min-width: 768px) {
-            padding: var(--space-md);
-        }
-    }
+.app-wrapper {
+  height: 100dvh;
+  padding: 12px;
+  overflow: hidden;
+  background-color: var(--bg-muted);
+
+  &_container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--bg-primary);
+    border-radius: 12px;
+  }
 }
