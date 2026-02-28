@@ -10,15 +10,15 @@
 
 <style lang="scss" scoped>
 .video-wrapper {
-  position: relative;
-  width: 100%;
-  display: flex;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 0;
 }
 
 .bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;

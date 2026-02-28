@@ -1,13 +1,10 @@
 .app-footer {
-  display: flex;
   position: fixed;
   bottom: 12px;
   left: 0;
   width: 100%;
-  margin-inline: auto;
   //   padding: 0 12px;
   background-color: var(--bg-muted);
-
   border-radius: 16px;
 
   @media (min-width: 768px) {

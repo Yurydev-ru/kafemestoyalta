@@ -1,6 +1,4 @@
-<script lang="ts" setup>
-import VideoBg from "@/components/layout/VideoBg.vue";
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <section class="hero-sections">
@@ -11,8 +9,10 @@ import VideoBg from "@/components/layout/VideoBg.vue";
 
 <style lang="scss" scoped>
 .hero-sections {
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  height: 100%;
+  isolation: isolate;
 }
 </style>

@@ -1,18 +1,20 @@
 <script lang="ts" setup>
-import Container from "@/components/layout/Container.vue";
 import AppFooter from "~/components/layout/AppFooter.vue";
 import AppHeader from "~/components/layout/AppHeader.vue";
+import UiContainer from "~/components/ui/UiContainer.vue";
 </script>
 
 <template>
   <div class="app-wrapper">
-    <AppHeader />
-    <main class="app-main">
-      <Container>
-        <slot />
-      </Container>
-    </main>
-    <AppFooter />
+    <div class="app-wrapper_container">
+      <AppHeader />
+      <main class="app-main">
+        <UiContainer>
+          <slot />
+        </UiContainer>
+      </main>
+      <AppFooter />
+    </div>
   </div>
 </template>
 

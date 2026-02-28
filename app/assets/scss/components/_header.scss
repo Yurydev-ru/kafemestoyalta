@@ -1,12 +1,10 @@
 .app-header {
-  display: flex;
+  width: 100%;
   position: fixed;
   top: 16px;
   left: 0;
-  margin-inline: auto;
   //   padding: 0 12px;
-  width: 100%;
-  //   z-index: 1000;
+  z-index: 1;
 
   border-radius: 8px;
 

@@ -8,6 +8,6 @@
 
 <style lang="scss" scoped>
 .side-bar {
-  display: flex;
+  display: none;
 }
 </style>
