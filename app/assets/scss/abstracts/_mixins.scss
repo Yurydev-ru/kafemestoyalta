@@ -1,5 +1,0 @@
-@mixin media($bp) {
-    @media (min-width: map-get($breakpoints, $bp)) {
-        @content
-    }
-}
