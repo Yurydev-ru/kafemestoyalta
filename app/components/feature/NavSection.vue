@@ -18,22 +18,20 @@ const isActive = (item: (typeof props.items)[number]) => {
 
 <template>
   <nav class="navigations" role="navigation" aria-label="Главная навигация">
-    <div class="container">
-      <ul>
-        <li class="nav-item" v-for="item in items" :key="item.to">
-          <NuxtLink
-            class="nav-link"
-            :to="item.to"
-            :class="{ 'is-active': isActive(item) }"
-            :aria-current="isActive(item) ? 'page' : undefined"
-            :aria-label="item.label"
-          >
-            <Icon class="nav-icon" :name="item.name" size="28" />
-            <span class="nav-label">{{ item.label }}</span>
-          </NuxtLink>
-        </li>
-      </ul>
-    </div>
+    <ul>
+      <li class="nav-item" v-for="item in items" :key="item.to">
+        <NuxtLink
+          class="nav-link"
+          :to="item.to"
+          :class="{ 'is-active': isActive(item) }"
+          :aria-current="isActive(item) ? 'page' : undefined"
+          :aria-label="item.label"
+        >
+          <Icon class="nav-icon" :name="item.name" size="28" />
+          <span class="nav-label">{{ item.label }}</span>
+        </NuxtLink>
+      </li>
+    </ul>
   </nav>
 </template>
 
@@ -43,23 +41,9 @@ const isActive = (item: (typeof props.items)[number]) => {
 }
 
 .navigations ul {
-  @include grid;
-  //   display: grid;
-  //   width: 100%;
-  //   gap: 16px;
-  //   grid-template-columns: repeat(4, 1fr);
-
-  @media (min-width: 458px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (min-width: 768px) {
-    padding: 20px;
-    outline: 1px solid var(--color-border-primary);
-    justify-content: center;
-
-    grid-template-columns: 1fr;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 4fr));
+  //   overflow-x: hidden;
 }
 
 .nav-item {
@@ -70,8 +54,9 @@ const isActive = (item: (typeof props.items)[number]) => {
   width: 24px;
   height: 24px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   color: #e9f0f0;
-  display: inline-block;
   margin-bottom: 5px;
 }
 

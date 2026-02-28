@@ -1,15 +1,5 @@
 .app-footer {
-  position: fixed;
-  bottom: 12px;
-  left: 0;
   width: 100%;
-  //   padding: 0 12px;
-  background-color: var(--bg-muted);
-  border-radius: 16px;
-
-  @media (min-width: 768px) {
-    width: 300px;
-    margin-inline-end: inherit;
-    height: auto;
-  }
+  //   background-color: var(--bg-primary);
+  z-index: 5;
 }
