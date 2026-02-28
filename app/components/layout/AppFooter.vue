@@ -1,13 +1,15 @@
 <script lang="ts" setup>
 
+
+
 </script>
 
 <template>
-    <div class="container">
-        <slot/>
-    </div>
+    <footer class="app-footer">
+       c
+    </footer>
 </template>
 
 <style lang="scss" scoped>
-  
+    
 </style>

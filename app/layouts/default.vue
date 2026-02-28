@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import AppHeader from '~/components/layout/Header.vue';
-
 
 </script>
 
@@ -10,6 +8,7 @@ import AppHeader from '~/components/layout/Header.vue';
     <main class="app-main">
       <slot />
     </main>
+    <AppFooter/>
   </div>
 
 </template>

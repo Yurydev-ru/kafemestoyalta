@@ -2,14 +2,18 @@
   // https://nuxt.com/docs/guide/concepts/typescript
   "files": [],
   "compilerOptions": {
+    "module": "es2015",
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./app/*"],
       "~/*": ["./app/*"],
-        "@types/*": ["./app/types/*"]
+      "@types": ["./shared/types/index.ts"],
+      "@types/*": ["./shared/types/*"],
     },
     "types": ["@types/node"]
   },
-  "references": [
+"references": [
     {
       "path": "./.nuxt/tsconfig.app.json"
     },
@@ -22,5 +26,5 @@
     {
       "path": "./.nuxt/tsconfig.node.json"
     }
-  ],
+  ]
 }

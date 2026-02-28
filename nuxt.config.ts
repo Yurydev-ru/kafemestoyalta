@@ -1,9 +1,30 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { fileURLToPath } from "node:url";
+
 export default defineNuxtConfig({
+  devtools: { 
+    enabled: true
+  },
+  nitro: {
+    compressPublicAssets: true,
+  },
+  alias: {
+    '@ui': fileURLToPath(new URL('./components/ui', import.meta.url)),
+    '@layout': fileURLToPath(new URL('./components/layout', import.meta.url)),
+    '@feature': fileURLToPath(new URL('./components/feature', import.meta.url))
+  },
   css: ['~/assets/scss/main.scss'],
+  modules: ['@nuxt/icon'],
   components: [
     {
-      path: '~/components/',
+      path: '~/components/layout',
+      pathPrefix: false
+    },
+    {
+      path: '~/components/ui',
+      pathPrefix: false
+    },
+    {
+      path: '~/components/feature',
       pathPrefix: false
     },
   ],
@@ -15,19 +36,17 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: false
   },
+  icon: {
+    provider: 'iconify'
+  },
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: ` 
-          @use "@/assets/scss/tokens" as *;
-          `
+          additionalData: ` @use "@/assets/scss/tokens/colors";`
         }
       }
     }
-  },
-  devtools: { 
-    enabled: true
   },
   compatibilityDate: '2025-07-15',
 })

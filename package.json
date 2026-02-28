@@ -7,6 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "typecheck": "vue-tsc --noEmit",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
@@ -15,6 +16,8 @@
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
+    "@iconify-json/streamline-freehand": "^1.2.1",
+    "@nuxt/icon": "^2.2.1",
     "@types/node": "^25.3.0",
     "sass": "^1.97.3",
     "typescript": "^5.9.3",

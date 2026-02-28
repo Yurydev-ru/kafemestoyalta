@@ -5,7 +5,7 @@ definePageMeta({
 </script>
 
 <template>
-    <FeatureGrid />
+    <p>ds</p>
 </template>
 
 <style lang="scss" scoped>
