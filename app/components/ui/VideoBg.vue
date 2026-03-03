@@ -4,16 +4,18 @@ const { isMobile } = useBreakpoints();
 
 <template>
   <div class="video-wrapper">
-    <img
+    <picture class="video-wrapper_overlay">
+      <source media="(min-width: 767px)" srcset="/images/bg-mob.jpg" />
+      <video class="bg-video" autoplay muted loop playsinline preload="auto">
+        <source src="/video/bg-video.mp4" type="video/mp4" />
+      </video>
+    </picture>
+    <!-- <img
       v-if="isMobile"
       class="bg-img"
       src="/images/bg-mob.jpg"
       alt="background"
-    />
-
-    <video v-else class="bg-video" autoplay muted loop playsinline>
-      <source src="/video/bg-video.mp4" type="video/mp4" />
-    </video>
+    /> -->
   </div>
 </template>
 
