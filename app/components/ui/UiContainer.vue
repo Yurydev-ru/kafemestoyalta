@@ -9,9 +9,6 @@
 <style lang="scss" scoped>
 .ui-container {
   position: relative;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
 }
 </style>

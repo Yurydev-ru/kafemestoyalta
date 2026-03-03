@@ -21,34 +21,24 @@ const { isMobile } = useBreakpoints();
 
 <style lang="scss" scoped>
 .video-wrapper {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1;
-  //   background-color: var(--bg-muted);
-}
-
-.bg-img {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  height: 100%;
-  z-index: 10;
-  object-fit: cover;
-  //   isolation: isolate;
-  background: #ffffff;
+  inset: 0;
+  overflow: hidden;
+  z-index: -10;
+  //   background-color: var(--bg-muted);
+
+  &_overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .bg-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  isolation: isolate;
+  display: block;
 }
 </style>
