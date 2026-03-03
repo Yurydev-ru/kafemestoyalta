@@ -8,11 +8,8 @@
 
 <style lang="scss" scoped>
 .ui-container {
+  position: relative;
   width: 100%;
-  max-width: 1200px;
-  border-radius: 12px;
-  margin-inline: auto;
-  height: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;

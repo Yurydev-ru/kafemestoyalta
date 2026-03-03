@@ -10,9 +10,10 @@
 <style lang="scss" scoped>
 .hero-sections {
   position: relative;
-  display: flex;
-  flex-direction: column;
+
   height: 100%;
-  isolation: isolate;
+
+  overflow: hidden;
+  z-index: 1;
 }
 </style>

@@ -2,7 +2,7 @@
 
 <template>
   <header class="app-header">
-    <div class="container">
+    <div class="app-header_container">
         <NuxtLink to:="/">
             <img class="logo" src="/images/menu.jpg" width="45" height="45" alt="">
         </NuxtLink>

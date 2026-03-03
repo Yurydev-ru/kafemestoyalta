@@ -15,10 +15,16 @@ const navItems = ref([
 
 <template>
   <footer class="app-footer">
-    <div class="container">
+    <div class="app-footer__container">
       <NavSection :items="navItems" />
     </div>
   </footer>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.app-footer__container {
+  width: 100%;
+  max-width: 100%;
+  padding-inline: 1rem;
+}
+</style>
