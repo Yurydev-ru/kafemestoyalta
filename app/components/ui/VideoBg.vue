@@ -1,11 +1,9 @@
-<script lang="ts" setup>
-const { isMobile } = useBreakpoints();
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div class="video-wrapper">
     <picture class="video-wrapper_overlay">
-      <source media="(min-width: 767px)" srcset="/images/bg-mob.jpg" />
+      <source media="(max-width: 767px)" srcset="/images/bg-mob.jpg" />
       <video class="bg-video" autoplay muted loop playsinline preload="auto">
         <source src="/video/bg-video.mp4" type="video/mp4" />
       </video>

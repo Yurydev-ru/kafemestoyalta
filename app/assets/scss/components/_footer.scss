@@ -5,4 +5,8 @@
   z-index: 10;
   width: 100%;
   background-color: var(--bg-primary);
+
+  @media (min-width: 767px) {
+    display: none;
+  }
 }
