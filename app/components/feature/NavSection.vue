@@ -44,9 +44,22 @@ const isActive = (item: (typeof props.items)[number]) => {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 4fr));
   //   overflow-x: hidden;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+  }
 }
 
 .nav-item {
+  @media (min-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.nav-link {
   padding: 10px;
 }
 

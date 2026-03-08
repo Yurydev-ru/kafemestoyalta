@@ -8,8 +8,10 @@ definePageMeta({
 </script>
 
 <template>
-  <HeroSection />
-  <SidebarSection />
+  <UiContainer>
+    <HeroSection />
+    <SidebarSection />
+  </UiContainer>
 </template>
 
 <style lang="scss" scoped></style>

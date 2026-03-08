@@ -1,6 +1,5 @@
 @use "tokens";
-@use "base/global";
-@use "base/reset";
+@use "base" as *;
 @use "layout/wrapper";
 @use "layout/main";
 

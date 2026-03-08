@@ -6,15 +6,11 @@ import UiContainer from "~/components/ui/UiContainer.vue";
 
 <template>
   <div class="app-wrapper">
-    <div class="app-wrapper_container">
-      <AppHeader />
-      <main class="app-main">
-        <UiContainer>
-          <slot />
-        </UiContainer>
-      </main>
-      <AppFooter />
-    </div>
+    <AppHeader />
+    <main class="app-main">
+      <slot />
+    </main>
+    <AppFooter />
   </div>
 </template>
 
