@@ -8,9 +8,7 @@ import UiContainer from "~/components/ui/UiContainer.vue";
   <div class="app-wrapper">
     <AppHeader />
     <main class="app-main">
-      <UiContainer>
-        <slot />
-      </UiContainer>
+      <slot />
     </main>
     <AppFooter />
   </div>

@@ -11,6 +11,13 @@
 </template>
 
 <style lang="scss" scoped>
+
+.app-header_container {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 0.8rem;
+}
+
 .logo {
     display: flex;
     align-items: center;

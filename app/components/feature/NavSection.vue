@@ -53,12 +53,14 @@ const isActive = (item: (typeof props.items)[number]) => {
 }
 
 .nav-item {
-  padding: 10px;
-
   @media (min-width: 768px) {
     width: 100%;
     height: 100%;
   }
+}
+
+.nav-link {
+  padding: 10px;
 }
 
 .nav-icon {
