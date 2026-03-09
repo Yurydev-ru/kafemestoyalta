@@ -1,18 +1,24 @@
 <script lang="ts" setup>
-import NavSection from "~/components/feature/NavSection.vue";
+import { ref } from "vue";
+
 const navItems = ref([
   { to: "/", label: "Home", name: "streamline-freehand:home", exact: true },
   {
-    to: "/",
-    label: "Home",
-    name: "streamline-freehand:paginate-filter-mail",
+    to: "/menu",
+    label: "Меню",
+    name: "streamline-freehand:book-read-list",
     exact: true,
   },
-  { to: "menu", label: "Menu", name: "streamline-freehand:home", exact: true },
   {
-    to: "about",
-    label: "About",
-    name: "streamline-freehand:home",
+    to: "/about",
+    label: "О нас",
+    name: "streamline-freehand:information-desk",
+    exact: true,
+  },
+  {
+    to: "/contact",
+    label: "Контакт",
+    name: "streamline-freehand:mail-send-email",
     exact: true,
   },
 ]);
@@ -21,7 +27,7 @@ const navItems = ref([
 <template>
   <footer class="app-footer">
     <div class="app-footer_container">
-      <NavSection :items="navItems" />
+      <AppNav :items="navItems" />
     </div>
   </footer>
 </template>

@@ -1,8 +1,10 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import BgVideo from "~/components/ui/BgVideo.vue";
+</script>
 
 <template>
   <section class="hero-sections">
-    <VideoBg />
+    <BgVideo />
     <div class="hero-sections_content">
       <div class="hero-sections_title">
         <span>кафе</span>
@@ -45,8 +47,7 @@
 <style lang="scss" scoped>
 .hero-sections {
   position: relative;
-  //   min-height: 100vh;
-  height: calc(100vh - 120px);
+  height: 100%;
   overflow-y: auto;
   z-index: 1;
   isolation: isolate;

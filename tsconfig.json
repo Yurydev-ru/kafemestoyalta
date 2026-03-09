@@ -11,7 +11,7 @@
       "@types": ["./shared/types/index.ts"],
       "@types/*": ["./shared/types/*"]
     },
-    "types": ["@types/node"]
+    "types": ["@types/node", "nuxt"]
   },
   "references": [
     {
