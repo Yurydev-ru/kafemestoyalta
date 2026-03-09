@@ -4,13 +4,8 @@
   "compilerOptions": {
     "module": "es2015",
     "moduleResolution": "bundler",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./app/*"],
-      "~/*": ["./app/*"],
-      "@types": ["./shared/types/index.ts"],
-      "@types/*": ["./shared/types/*"]
-    },
+    "noImplicitAny": true,
+
     "types": ["@types/node", "nuxt"]
   },
   "references": [
