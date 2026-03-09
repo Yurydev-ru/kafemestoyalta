@@ -3,12 +3,20 @@
 <template>
   <div class="video-wrapper">
     <picture class="bg-image">
-      <source media="(max-width: 767px)" srcset="/images/bg-mob.jpg" />
-      <img src="/images/bg-mob.jpg" alt="" />
+      <source media="(max-width: $size.mx)" srcset="/images/bg-mob.jpg" />
+      <img src="/images/bg-mob.jpg" alt="Декоративное фоновое изображение" />
     </picture>
 
-    <video class="bg-video" autoplay muted loop playsinline preload="auto">
-      <source src="/video/bg-video.mp4" type="video/mp4" />
+    <video
+      class="bg-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      aria-hidden="true"
+    >
+      <source src="/video/bg-video.mp4" type="video/mp4" loading="lazy" />
     </video>
   </div>
 </template>

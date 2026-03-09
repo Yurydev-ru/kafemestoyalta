@@ -38,13 +38,14 @@ export default defineNuxtConfig({
   },
   icon: {
     provider: "iconify",
+    cssSelectorPrefix: "i-",
+    fetchTimeout: 1500,
   },
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
           additionalData: ` 
-          
           @use "@/assets/scss/tokens/colors";
           @use "@/assets/scss/abstracts/_mixins.scss" as *;
           `,
