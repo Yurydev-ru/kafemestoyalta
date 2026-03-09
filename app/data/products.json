@@ -1,0 +1,16 @@
+{
+  "Myaso": [
+    { "id": 1, "title": "Яблоко", "price": 50, "image": "/images/menu.jpg" },
+    { "id": 2, "title": "Банан", "price": 60, "image": "/images/menu.jpg" }
+  ],
+  "Rolls": [
+    { "id": 3, "title": "Огурец", "price": 40, "image": "/images/menu.jpg" },
+    { "id": 4, "title": "Помидор", "price": 55, "image": "/images/menu.jpg" }
+  ],
+  "Drink": [
+    { "id": 5, "title": "Сок", "price": 120, "image": "/images/menu.jpg" }
+  ],
+  "More": [
+    { "id": 5, "title": "Сок", "price": 120, "image": "/images/menu.jpg" }
+  ]
+}

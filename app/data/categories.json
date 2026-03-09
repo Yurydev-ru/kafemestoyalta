@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "slug": "Myaso",
+    "title": "Мясо",
+    "image": "./images/menu.jpg"
+  },
+  {
+    "id": 2,
+    "slug": "Rolls",
+    "title": "Роллы",
+    "image": "./images/menu.jpg"
+  },
+  {
+    "id": 3,
+    "slug": "Drink",
+    "title": "Напитки",
+    "image": "./images/menu.jpg"
+  },
+  {
+    "id": 4,
+    "slug": "More",
+    "title": "Морепродукты",
+    "image": "./images/menu.jpg"
+  }
+]
