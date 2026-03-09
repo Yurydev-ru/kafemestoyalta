@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import AppFooter from "~/components/layout/AppFooter.vue";
 import AppHeader from "~/components/layout/AppHeader.vue";
-import UiContainer from "~/components/ui/UiContainer.vue";
 </script>
 
 <template>

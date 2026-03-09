@@ -8,8 +8,13 @@ const navItems = ref([
     name: "streamline-freehand:paginate-filter-mail",
     exact: true,
   },
-  { to: "/", label: "Home", name: "streamline-freehand:home", exact: true },
-  { to: "/", label: "Home", name: "streamline-freehand:home", exact: true },
+  { to: "menu", label: "Menu", name: "streamline-freehand:home", exact: true },
+  {
+    to: "about",
+    label: "About",
+    name: "streamline-freehand:home",
+    exact: true,
+  },
 ]);
 </script>
 

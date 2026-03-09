@@ -7,7 +7,7 @@
       <div class="hero-sections_title">
         <span>кафе</span>
         <span>Место</span>
-        <!-- <p>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quam
           nemo quis porro perspiciatis aliquid vero officiis reprehenderit eum
           fuga repudiandae atque modi, explicabo, labore eos tempora sapiente
@@ -31,7 +31,7 @@
           repellendus voluptate libero! Placeat tempora unde laudantium et
           repellat sunt, provident ullam, veritatis ea cumque veniam
           reprehenderit.
-        </p> -->
+        </p>
       </div>
 
       <p>
@@ -45,13 +45,14 @@
 <style lang="scss" scoped>
 .hero-sections {
   position: relative;
-  min-height: 100vh;
+  //   min-height: 100vh;
+  height: calc(100vh - 120px);
+  overflow-y: auto;
   z-index: 1;
   isolation: isolate;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  //   overflow: hidden;
+  //   display: flex;
+  //   flex-direction: column;
 }
 
 .hero-sections_content {
