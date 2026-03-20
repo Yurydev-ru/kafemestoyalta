@@ -16,7 +16,7 @@ const products =
         <div class="card">
           <img :src="product.image" alt="" />
           <h3 class="card-title">{{ product.title }}</h3>
-          <p class="card-price">{{ product.price }}</p>
+          <p class="card-price">{{ product.price }}р.</p>
         </div>
       </div>
     </div>
@@ -31,9 +31,9 @@ const products =
   margin-top: 1rem;
   margin-bottom: 1rem;
   display: grid;
-  //   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  //   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: grid;
+  //   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
 
@@ -43,7 +43,7 @@ const products =
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 0.8rem;
   text-align: center;
   border-radius: 10px;
 }

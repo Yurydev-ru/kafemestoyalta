@@ -56,6 +56,8 @@ const isActive = (item: (typeof props.items)[number]) => {
   @media (min-width: 768px) {
     width: 100%;
     height: 100%;
+    border-radius: 15px;
+    outline: 1px solid var(--color-border-primary);
   }
 }
 
