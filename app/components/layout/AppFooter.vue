@@ -36,6 +36,6 @@ const navItems = ref([
 .app-footer_container {
   width: 100%;
   max-width: 100%;
-  padding-inline: 0.8rem;
+  //   padding-inline: 0.8rem;
 }
 </style>
