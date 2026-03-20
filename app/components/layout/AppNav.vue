@@ -47,16 +47,20 @@ const isActive = (item: (typeof props.items)[number]) => {
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 100%;
+    grid-template-rows: repeat(auto, 4fr);
+    gap: 10px;
+    height: 100dvh;
+    padding: 1rem;
   }
 }
 
 .nav-item {
   @media (min-width: 768px) {
+    overflow: hidden;
     width: 100%;
     height: 100%;
     border-radius: 15px;
+    // padding: 1rem;
     outline: 1px solid var(--color-border-primary);
   }
 }

@@ -4,7 +4,7 @@
   <header class="app-header">
     <div class="app-header_container">
       <NuxtLink to="/" class="logo">
-        <h1 class="logo">Logo</h1>
+        <h1 class="logo">Место</h1>
       </NuxtLink>
     </div>
   </header>
@@ -20,5 +20,14 @@
 .logo {
   display: flex;
   align-items: center;
+  color: var(--color-primary);
+  text-decoration: none;
+
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
+  &:hover {
+    color: var(--color-primary-hover);
+  }
 }
 </style>
