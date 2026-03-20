@@ -28,7 +28,25 @@ export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: true,
   },
-
+  ssr: false,
+  runtimeConfig: {
+    public: {
+      siteName: "Kafe Mesto",
+    },
+  },
+  app: {
+    head: {
+      title: "Кафе Место",
+      titleTemplate: "%s | Кафе Место",
+      meta: [
+        { name: "description", content: "Лаундж кафе в центре Амстердама" },
+      ],
+      //   link: [
+      //     { rel: "icon", href: "/favicon.ico" },
+      //     { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      //   ],
+    },
+  },
   alias: {
     "@ui": fileURLToPath(new URL("./components/ui", import.meta.url)),
     "@layout": fileURLToPath(new URL("./components/layout", import.meta.url)),
