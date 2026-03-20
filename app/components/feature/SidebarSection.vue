@@ -4,7 +4,7 @@ const navItems = ref([
   {
     to: "/",
     label: "Home",
-    name: "streamline-freehand:paginate-filter-mail",
+    name: "i-tabler:paginate-filter-mail",
     exact: true,
   },
   { to: "/", label: "Home", name: "streamline-freehand:home", exact: true },

@@ -11,6 +11,47 @@
     { "id": 5, "title": "Сок", "price": 120, "image": "/images/menu.jpg" }
   ],
   "More": [
-    { "id": 5, "title": "Сок", "price": 120, "image": "/images/menu.jpg" }
+    {
+      "id": 1,
+      "title": "Апельсиновый Сок",
+      "price": 120,
+      "image": "/images/menu.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Персиковый Сок",
+      "price": 120,
+      "image": "/images/menu.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Гранатовый Сок",
+      "price": 120,
+      "image": "/images/menu.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Виноградный Сок",
+      "price": 120,
+      "image": "/images/menu.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Ванильный Сок",
+      "price": 120,
+      "image": "/images/menu.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Ванильный Сок",
+      "price": 120,
+      "image": "/images/menu.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Ванильный Сок",
+      "price": 120,
+      "image": "/images/menu.jpg"
+    }
   ]
 }
