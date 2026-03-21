@@ -38,30 +38,38 @@ const isActive = (item: (typeof props.items)[number]) => {
 <style lang="scss" scoped>
 .navigations {
   width: 100%;
+
+  @media (min-width: 768px) {
+    background-color: var(--bg-primary);
+  }
 }
 
 .navigations ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 4fr));
+
   //   overflow-x: hidden;
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto, 4fr);
     gap: 10px;
-    height: 100dvh;
-    padding: 1rem;
+    // height: 100dvh;
+    // overflow-y: scroll;
+    padding: 0.5rem;
   }
 }
 
 .nav-item {
   @media (min-width: 768px) {
+    background: var(--bg-muted);
     overflow: hidden;
     width: 100%;
     height: 100%;
     border-radius: 15px;
     // padding: 1rem;
-    outline: 1px solid var(--color-border-primary);
+    outline: 1px solid #e7ecd314;
+    box-shadow: 0px 1px 8px #141010;
   }
 }
 

@@ -2,11 +2,11 @@
 import { ref } from "vue";
 
 const navItems = ref([
-  { to: "/", label: "Home", name: "streamline-freehand:home", exact: true },
+  { to: "/", label: "Домой", name: "streamline-freehand:home", exact: true },
   {
     to: "/menu",
     label: "Меню",
-    name: "streamline-freehand:book-read-list",
+    name: "streamline-freehand:mobile-shopping-shop-basket",
     exact: true,
   },
   {
@@ -17,8 +17,8 @@ const navItems = ref([
   },
   {
     to: "/contact",
-    label: "Контакт",
-    name: "streamline-freehand:mail-send-email",
+    label: "Контакты",
+    name: "streamline-freehand:collaboration-team-chat",
     exact: true,
   },
 ]);
