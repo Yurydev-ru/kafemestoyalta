@@ -3,8 +3,8 @@
 <template>
   <div class="video-wrapper">
     <picture class="bg-image">
-      <source media="(max-width: $size.mx)" srcset="/images/bg-mob.jpg" />
-      <img src="/images/bg-mob.jpg" alt="Декоративное фоновое изображение" />
+      <source media="(max-width: $size.mx)" srcset="/images/bg-mob.jpg" >
+      <img src="/images/bg-mob.jpg" alt="Декоративное фоновое изображение" >
     </picture>
 
     <video
@@ -16,7 +16,7 @@
       preload="metadata"
       aria-hidden="true"
     >
-      <source src="/video/bg-video.mp4" type="video/mp4" loading="lazy" />
+      <source src="/video/bg-video.mp4" type="video/mp4" loading="lazy" >
     </video>
   </div>
 </template>

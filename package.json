@@ -11,7 +11,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "typecheck": "vue-tsc --noEmit",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "nuxt": "^4.4.2",
