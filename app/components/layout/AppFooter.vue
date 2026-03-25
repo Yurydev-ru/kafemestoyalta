@@ -32,10 +32,4 @@ const navItems = ref([
   </footer>
 </template>
 
-<style lang="scss" scoped>
-.app-footer_container {
-  width: 100%;
-  max-width: 100%;
-  //   padding-inline: 0.8rem;
-}
-</style>
+<style lang="scss" scoped></style>

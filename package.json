@@ -20,8 +20,10 @@
   },
   "devDependencies": {
     "@iconify-json/streamline-freehand": "^1.2.1",
+    "@nuxt/eslint": "^1.15.2",
     "@nuxt/icon": "^2.2.1",
     "@types/node": "^25.5.0",
+    "eslint": "^9.39.4",
     "sass": "^1.98.0",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.2.6"
