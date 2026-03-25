@@ -1,0 +1,17 @@
+@mixin media($key) {
+  @if $key == "mobile" {
+    @media (max-width: map-get($size, "m" - 0.1px)) {
+      @content;
+    }
+  }
+  @if $key == "tablet" {
+    @media (min-width: map-get($size, "m")) and (max-width: map-get($size, "mx" - 0.1px)) {
+      @content;
+    }
+  }
+  @if $key == "desktop" {
+    @media (min-width: map-get($size, "mx")) {
+      @content;
+    }
+  }
+}
