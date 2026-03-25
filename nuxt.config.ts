@@ -5,7 +5,23 @@ export default defineNuxtConfig({
     enabled: true,
   },
   ssr: false,
-
+  nitro: {
+    compressPublicAssets: true,
+    prerender: {
+      routes: [
+        "/",
+        "/menu",
+        "/category/myaso",
+        "/category/fastfood",
+        "/category/drinks",
+        "/category/rolls",
+        "/category/rolls/cold",
+        "/category/rolls/fried",
+        "/category/rolls/sets",
+        "/category/rolls/all",
+      ],
+    },
+  },
   runtimeConfig: {
     public: {
       siteName: "Kafe Mesto",
@@ -16,18 +32,14 @@ export default defineNuxtConfig({
     head: {
       title: "Кафе Место",
       titleTemplate: "%s | Кафе Место",
-      meta: [
-        { name: "description", content: "Лаундж кафе в центре Амстердама" },
-      ],
+      meta: [{ name: "description", content: "Лаундж кафе в центре Ялты" }],
       //   link: [
       //     { rel: "icon", href: "/favicon.ico" },
       //     { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       //   ],
     },
   },
-  nitro: {
-    compressPublicAssets: true,
-  },
+
   components: [
     {
       path: "~/components",
