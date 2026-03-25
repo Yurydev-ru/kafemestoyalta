@@ -19,7 +19,7 @@ const isActive = (item: (typeof props.items)[number]) => {
 <template>
   <nav class="navigations" role="navigation" aria-label="Главная навигация">
     <ul>
-      <li class="nav-item" v-for="item in items" :key="item.to">
+      <li v-for="item in items" :key="item.to" class="nav-item">
         <NuxtLink
           class="nav-link"
           :to="item.to"

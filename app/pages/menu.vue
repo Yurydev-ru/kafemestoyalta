@@ -9,7 +9,7 @@ const categories = await import("@/data/categories.json");
       <li v-for="cat in categories.default" :key="cat.id">
         <NuxtLink class="card-cat" :to="`/category/${cat.slug}`">
           <h3>{{ cat.title }}</h3>
-          <img :src="cat.image" alt="" />
+          <img :src="cat.image" alt="" >
         </NuxtLink>
       </li>
     </ul>

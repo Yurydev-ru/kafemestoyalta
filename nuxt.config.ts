@@ -79,7 +79,7 @@ export default defineNuxtConfig({
   },
   css: ["@assets/scss/main.scss"],
 
-  modules: ["@nuxt/icon"],
+  modules: ["@nuxt/icon", "@nuxt/eslint"],
 
   devServer: {
     host: "127.0.0.1",

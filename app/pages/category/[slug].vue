@@ -14,7 +14,7 @@ const products =
     <div class="grid">
       <div v-for="product in products" :key="product.id">
         <div class="card">
-          <img :src="product.image" alt="" />
+          <img :src="product.image" alt="" >
           <h3 class="card-title">{{ product.title }}</h3>
           <p class="card-price">{{ product.price }}р.</p>
         </div>
