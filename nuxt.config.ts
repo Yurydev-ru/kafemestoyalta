@@ -99,8 +99,8 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData: ` 
-          @use "@assets/scss/tokens/colors" as *;
-          @use "@assets/scss/abstracts/_mixins.scss" as *;
+          @use "@assets/scss/tokens" as *;
+          @use "@assets/scss/abstracts" as *;
           `,
         },
       },
