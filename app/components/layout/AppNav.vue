@@ -40,7 +40,7 @@ const isActive = (item: (typeof props.items)[number]) => {
   width: 100%;
 
   @media (min-width: 768px) {
-    background-color: var(--bg-primary);
+    // background-color: var(--bg-primary);
   }
 }
 
