@@ -1,3 +1,4 @@
+@use "@/assets/scss/abstracts" as *;
 .app-footer {
   width: 100%;
   min-height: 60px;
@@ -5,9 +6,6 @@
   z-index: 10;
   background-color: var(--bg-muted);
   backdrop-filter: blur(6px);
-
-  @media (min-width: 767px) {
-  }
 }
 
 .app-footer_container {

@@ -1,17 +1,8 @@
-@mixin media($key) {
-  @if $key == "mobile" {
-    @media (max-width: map-get($size, "m" - 0.1px)) {
-      @content;
-    }
-  }
-  @if $key == "tablet" {
-    @media (min-width: map-get($size, "m")) and (max-width: map-get($size, "mx" - 0.1px)) {
-      @content;
-    }
-  }
-  @if $key == "desktop" {
-    @media (min-width: map-get($size, "mx")) {
-      @content;
-    }
-  }
-}
+$breakpoints: (
+  "s": 320px,
+  "sm": 468px,
+  "m": 768px,
+  "mx": 1024px,
+  "x": 1440px,
+  "xl": 1920px,
+);
