@@ -1,101 +1,34 @@
 <script lang="ts" setup>
-const props = defineProps<{
-  items: Array<{
-    to: string;
-    label: string;
-    name: string;
-    exact?: boolean;
-  }>;
+import type { NavItem } from "@/types/navigation";
+
+defineProps<{
+  items: NavItem[];
 }>();
 
 const route = useRoute();
-
-const isActive = (item: (typeof props.items)[number]) => {
-  if (item.exact) return route.path === item.to;
+const isActive = (item: NavItem) => {
+  if (item.exact || item.to === "/") return route.path === item.to;
   return route.path === item.to || route.path.startsWith(item.to + "/");
 };
 </script>
 
 <template>
-  <nav class="navigations" role="navigation" aria-label="Главная навигация">
-    <ul>
-      <li v-for="item in items" :key="item.to" class="nav-item">
+  <nav class="app-nav" role="navigation" aria-label="Главная навигация">
+    <ul class="app-nav__list nav-list">
+      <li v-for="item in items" :key="item.to" class="nav-list__item">
         <NuxtLink
-          class="nav-link"
+          class="nav-list__link"
           :to="item.to"
           :class="{ 'is-active': isActive(item) }"
           :aria-current="isActive(item) ? 'page' : undefined"
           :aria-label="item.label"
         >
-          <Icon class="nav-icon" :name="item.name" size="28" />
-          <span class="nav-label">{{ item.label }}</span>
+          <Icon class="nav-list__icon" :name="item.name" size="28" />
+          <span class="nav-list__label">{{ item.label }}</span>
         </NuxtLink>
       </li>
     </ul>
   </nav>
 </template>
 
-<style lang="scss" scoped>
-.navigations {
-  width: 100%;
-
-  @media (min-width: 768px) {
-    // background-color: var(--bg-primary);
-  }
-}
-
-.navigations ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 4fr));
-
-  //   overflow-x: hidden;
-
-  @media (min-width: 768px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto, 4fr);
-    gap: 10px;
-    // height: 100dvh;
-    // overflow-y: scroll;
-    padding: 0.5rem;
-  }
-}
-
-.nav-item {
-  @media (min-width: 768px) {
-    background: var(--bg-muted);
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    // padding: 1rem;
-    outline: 1px solid #e7ecd314;
-    box-shadow: 0px 1px 8px #141010;
-  }
-}
-
-.nav-link {
-  padding: 10px;
-}
-
-.nav-icon {
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #e9f0f0;
-  margin-bottom: 5px;
-}
-
-// .is-active .nav-icon {
-//   transform: scale(1.15);
-// }
-
-.nav-label {
-  font-size: 12px;
-  line-height: 1;
-  letter-spacing: -0.2px;
-  color: #e9f0f0;
-  font-weight: 400;
-}
-</style>
+<style lang="scss" scoped></style>

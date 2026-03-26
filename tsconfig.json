@@ -6,7 +6,7 @@
     "moduleResolution": "bundler",
     "noImplicitAny": true,
     "paths": {
-      "@types/*": ["./app/types/*"]
+      "@types": ["./app/types"]
     },
 
     "types": ["@types/node", "nuxt"]

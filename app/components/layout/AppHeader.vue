@@ -3,7 +3,7 @@
 <template>
   <header class="app-header">
     <div class="app-header_container">
-      <NuxtLink to="/" class="logo">
+      <NuxtLink class="logo" to="/">
         <h1 class="logo">Место</h1>
       </NuxtLink>
       <NuxtLink class="app-header_user-phone" to="tel:+79785144228">

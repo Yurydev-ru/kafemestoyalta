@@ -3,7 +3,6 @@ export interface Category {
   slug: string;
   title: string;
   image: string;
-  hasSubcategories?: boolean;
 }
 
 export interface Product {
@@ -12,13 +11,5 @@ export interface Product {
   price: number;
   image: string;
   desc?: string;
+  weight?: number;
 }
-
-export type ProductGroup =
-  | Product[]
-  | {
-      all?: Product[];
-      cold?: Product[];
-      fried?: Product[];
-      sets?: Product[];
-    };
