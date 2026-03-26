@@ -1,12 +1,11 @@
-import type { MenuItem } from "@types/index";
-
+import type { NavItem } from "@/types/navigation";
 export const useNavigation = () => {
-  const mainNav = [
-    { to: "/", label: "Домой", name: "streamline-freehand:home", exact: true },
+  const navItems: NavItem[] = [
+    { to: "/", label: "Home", name: "streamline-freehand:home", exact: true },
     {
       to: "/menu",
       label: "Меню",
-      name: "streamline-freehand:mobile-shopping-shop-basket",
+      name: "streamline-freehand:book-read-list",
       exact: true,
     },
     {
@@ -17,11 +16,11 @@ export const useNavigation = () => {
     },
     {
       to: "/contact",
-      label: "Контакты",
-      name: "streamline-freehand:collaboration-team-chat",
+      label: "Контакт",
+      name: "streamline-freehand:mail-send-email",
       exact: true,
     },
   ];
 
-  return { mainNav };
+  return { navItems };
 };
