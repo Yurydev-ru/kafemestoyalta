@@ -73,6 +73,8 @@ export default defineNuxtConfig({
     "@composables": fileURLToPath(
       new URL("./app/composables", import.meta.url),
     ),
+    "@utils": fileURLToPath(new URL("./app/utils", import.meta.url)),
+    "@types": fileURLToPath(new URL("./app/types", import.meta.url)),
     "@assets": fileURLToPath(new URL("./app/assets", import.meta.url)),
     "~/": fileURLToPath(new URL("./app", import.meta.url)),
     "@/": fileURLToPath(new URL("./app", import.meta.url)),
@@ -101,6 +103,7 @@ export default defineNuxtConfig({
           additionalData: ` 
           @use "@assets/scss/tokens" as *;
           @use "@assets/scss/abstracts" as *;
+          
           `,
         },
       },

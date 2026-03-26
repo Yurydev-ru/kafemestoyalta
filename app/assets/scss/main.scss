@@ -1,7 +1,7 @@
-@forward "abstracts";
-@use "./base/" as *;
+@use "./abstracts" as *;
+@use "./base/index" as *;
 // @use "tokens";
 
 @use "layout/main";
 @use "layout/wrapper";
-@use "components/index";
+@use "./components/index" as *;

@@ -5,6 +5,7 @@ export interface Category {
   image: string;
   hasSubcategories?: boolean;
 }
+
 export interface Product {
   id: number;
   title: string;
@@ -16,7 +17,7 @@ export interface Product {
 export type ProductGroup =
   | Product[]
   | {
-      all: Product[];
+      all?: Product[];
       cold?: Product[];
       fried?: Product[];
       sets?: Product[];
