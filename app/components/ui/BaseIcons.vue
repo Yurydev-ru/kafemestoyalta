@@ -2,7 +2,6 @@
 const props = defineProps<{
   name: string;
   size?: number | string;
-  class?: string;
 }>();
 
 const sizeStyle = computed(() => {
@@ -17,7 +16,6 @@ const spritePath = "/icons/sprite.svg";
 <template>
   <svg
     class="inline-block shrink-0"
-    :class="class"
     :style="sizeStyle"
     aria-hidden="true"
     focusable="false"
