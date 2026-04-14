@@ -1,8 +1,16 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import type { CategoryCard } from "@/types/menu";
+
+defineProps<{
+  category: CategoryCard;
+}>();
+</script>
 
 <template>
-  <div class="category-card">
-    <p>f</p>
+  <div>
+    <NuxtLink :to="`/category/${category.slug}`" class="category-card">
+      <h3 class="category-card__title">{{ category.title }}</h3>
+    </NuxtLink>
   </div>
 </template>
 

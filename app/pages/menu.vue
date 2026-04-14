@@ -7,10 +7,11 @@ const categories = await import("@/data/categories.json");
     <h2 class="menu-title">Меню</h2>
     <ul class="categories-list">
       <li v-for="cat in categories.default" :key="cat.id">
-        <NuxtLink class="card-cat" :to="`/category/${cat.slug}`">
+        <UiCategoryCard />
+        <!-- <NuxtLink class="card-cat" :to="`/category/${cat.slug}`">
           <h3>{{ cat.title }}</h3>
           <img :src="cat.image" alt="" >
-        </NuxtLink>
+        </NuxtLink> -->
       </li>
     </ul>
   </div>
